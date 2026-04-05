@@ -22,8 +22,8 @@ const projectsData = [
     name: "EduSmartPro",
     url: "https://edusmartpro.in",
     desc: "Built a scalable coaching management system handling student data, role-based auth, and scheduling. Result: Zero-downtime launch.",
-    demoEmail: "admin@demo.com",
-    demoPass: "password123"
+    demoUsername: "shani",
+    demoPass: "demo123"
   },
   {
     id: "buzzme",
@@ -39,7 +39,7 @@ const projectsData = [
     url: "https://urge-relief.vercel.app",
     desc: "Habit tracking application utilizing a robust cloud database for long-term metric storage and analytics.",
     demoEmail: "user@urgerelief.com",
-    demoPass: "demo2024"
+    demoPass: "demo2025"
   },
   {
     id: "rizzonator",
@@ -312,10 +312,10 @@ export default function Home() {
         </p>
         
         <div className="flex flex-col sm:flex-row justify-center gap-4 w-full">
-          <a href="mailto:your@email.com" className="flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors font-bold text-lg w-full sm:w-auto">
+          <a href="mailto:shanibrooo@gmail.com" className="flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition-colors font-bold text-lg w-full sm:w-auto">
             <Mail className="w-5 h-5" /> Email Me Directly
           </a>
-          <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-[#25D366] text-white hover:bg-[#20b858] transition-colors font-bold text-lg w-full sm:w-auto">
+          <a href="https://wa.me/7388739691" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-[#25D366] text-white hover:bg-[#20b858] transition-colors font-bold text-lg w-full sm:w-auto">
             <Phone className="w-5 h-5" /> Chat on WhatsApp
           </a>
         </div>
