@@ -19,7 +19,7 @@ export default function PersonalPage() {
   const itemVariants = {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 300, damping: 24 } }
-  };
+  } as const;
 
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-zinc-200 font-sans selection:bg-blue-500/30 relative overflow-hidden">
