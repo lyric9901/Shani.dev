@@ -18,7 +18,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
         </ThemeProvider>
-        <meta name="google-site-verification" content="27LNO23puLxKunTr39MefH1yinrsOh3Tcz4Netxlug8" />
       </body>
     </html>
   );
