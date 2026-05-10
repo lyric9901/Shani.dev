@@ -9,6 +9,10 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 export const metadata: Metadata = {
   title: "Full-Stack Developer | SaaS & E-commerce",
   description: "Modern web applications built to scale.",
+  // ADD THIS RIGHT HERE!!!!
+  verification: {
+    google: "UJCoJlMIhzwHlsnz34xU9PLX3ArUNJIcIdsrR8jpwis",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
