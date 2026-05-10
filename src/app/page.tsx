@@ -361,7 +361,7 @@ export default function Home() {
               Best Value
             </div>
             <h3 className="text-xl font-semibold mb-2 text-blue-600 dark:text-blue-400">Growth</h3>
-            <p className="text-zinc-500 text-sm mb-6 h-10">The complete package to launch and scale a real business.</p>
+            <p className="text-zinc-500 text-sm mb-6 h-10">The complete package to launch and scale a real business. <br> landing pages with complex design and backend support </p>
             <div className="text-4xl font-bold mb-8">₹2,999</div>
             <ul className="space-y-3 text-sm font-medium mb-8 flex-1">
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-blue-500 mt-0.5" /> Full web application build</li>
