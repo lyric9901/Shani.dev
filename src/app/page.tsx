@@ -494,7 +494,7 @@ export default function Home() {
       <footer className="w-full text-center py-10 text-sm text-zinc-500 z-10 flex flex-col items-center gap-4 mt-4">
         <div className="w-8 h-8 bg-zinc-200 dark:bg-zinc-800 rounded-lg flex items-center justify-center font-bold text-zinc-400">S</div>
         <div className="flex items-center gap-4">
-          <p className="font-medium tracking-wide text-xs">© {new Date().getFullYear()} Shani.dev • Godhra, India</p>
+          <p className="font-medium tracking-wide text-xs">© {new Date().getFullYear()} Shani.dev • Lucknow, India</p>
           <span className="text-zinc-300 dark:text-zinc-700">|</span>
           <Link href="/personal" className="font-medium tracking-wide text-xs hover:text-blue-500 transition-colors">
             Read the raw story
