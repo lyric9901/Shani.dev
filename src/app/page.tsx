@@ -344,12 +344,13 @@ export default function Home() {
           {/* Basic */}
           <div className="p-8 rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/30 flex flex-col hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors">
             <h3 className="text-xl font-semibold mb-2">Basic</h3>
-            <p className="text-zinc-500 text-sm mb-6 h-10">Test the waters. Perfect for validating a core idea quickly.</p>
+            <p className="text-zinc-500 text-sm mb-6 h-10">Test the waters. Perfect for validating a core idea quickly. Only frontend , No complex backend</p>
             <div className="text-4xl font-bold mb-8">₹999</div>
             <ul className="space-y-3 text-sm font-medium mb-8 flex-1">
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-400 mt-0.5" /> High-conversion landing page</li>
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-400 mt-0.5" /> Fully mobile responsive</li>
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-400 mt-0.5" /> Waitlist / Email capture</li>
+              <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-400 mt-0.5" /> 2 revision</li>
             </ul>
             <a href="#contact" className="w-full py-3 rounded-xl border border-zinc-300 dark:border-zinc-700 text-center font-semibold hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">Start Basic</a>
           </div>
@@ -367,6 +368,7 @@ export default function Home() {
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-blue-500 mt-0.5" /> Secure Database & Auth</li>
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-blue-500 mt-0.5" /> Admin / User dashboards</li>
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-blue-500 mt-0.5" /> Priority delivery timeline</li>
+              <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-400 mt-0.5" /> 4 revision</li>
             </ul>
             <a href="#contact" className="w-full py-3 rounded-xl bg-blue-600 text-white text-center font-semibold hover:bg-blue-700 transition-colors shadow-md">Launch Your SaaS</a>
           </div>
@@ -380,6 +382,7 @@ export default function Home() {
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-400 mt-0.5" /> Advanced AI integrations</li>
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-400 mt-0.5" /> Complex 3rd-party APIs</li>
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-400 mt-0.5" /> Scalable cloud infrastructure</li>
+              <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-400 mt-0.5" /> 7 revision</li>
             </ul>
             <a href="#contact" className="w-full py-3 rounded-xl border border-zinc-300 dark:border-zinc-700 text-center font-semibold hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">Request a Quote</a>
           </div>
