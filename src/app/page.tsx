@@ -178,14 +178,13 @@ export default function Home() {
         </p>
       </motion.section>
 
-      {/* Case Studies (Expanding Weather Card Logic) */}
+      {/* Case Studies */}
       <section id="work" className="w-full flex flex-col gap-10 z-10">
         <div className="flex flex-col gap-2 text-center md:text-left">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Proof of Work</h2>
           <p className="text-zinc-600 dark:text-zinc-400">Hover and click below to load the live production environments.</p>
         </div>
 
-        {/* Note: mb-24 allows space for the expanding card dropdowns */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-24 mb-12">
           {projectsData.map((project) => {
             const isActive = activeProject.id === project.id;
@@ -279,13 +278,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Skills Showcase (Fanning Glass Cards) */}
+      {/* Skills Showcase */}
       <section className="w-full z-10 py-16 hidden sm:block">
         <div className="text-center mb-4">
           <h2 className="text-2xl font-bold tracking-tight">The Arsenal</h2>
         </div>
         
-        {/* The Fanning Container */}
         <div className="group relative flex justify-center items-center h-[250px] w-full max-w-3xl mx-auto cursor-default">
           {skills.map((skill, index) => {
             const rotations = ["-rotate-[20deg]", "-rotate-[10deg]", "rotate-0", "rotate-[10deg]", "rotate-[20deg]"];
@@ -300,7 +298,6 @@ export default function Home() {
                   {skill.icon}
                 </div>
                 
-                {/* Bottom Text Banner */}
                 <div className="absolute bottom-0 w-full h-[40px] bg-zinc-300/30 dark:bg-white/5 flex flex-col justify-center items-center border-t border-zinc-300/50 dark:border-white/10 rounded-b-[10px]">
                   <span className="text-zinc-800 dark:text-white font-bold text-sm">{skill.name}</span>
                 </div>
@@ -344,13 +341,13 @@ export default function Home() {
           {/* Basic */}
           <div className="p-8 rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/30 flex flex-col hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors">
             <h3 className="text-xl font-semibold mb-2">Basic</h3>
-            <p className="text-zinc-500 text-sm mb-6 h-10">Test the waters. Perfect for validating a core idea quickly. Only frontend , No complex backend</p>
+            <p className="text-zinc-500 text-sm mb-6 min-h-[48px]">Test the waters. Perfect for validating a core idea quickly. Only frontend, no complex backend.</p>
             <div className="text-4xl font-bold mb-8">₹999</div>
             <ul className="space-y-3 text-sm font-medium mb-8 flex-1">
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-400 mt-0.5" /> High-conversion landing page</li>
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-400 mt-0.5" /> Fully mobile responsive</li>
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-400 mt-0.5" /> Waitlist / Email capture</li>
-              <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-400 mt-0.5" /> 2 revision</li>
+              <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-400 mt-0.5" /> 2 revisions</li>
             </ul>
             <a href="#contact" className="w-full py-3 rounded-xl border border-zinc-300 dark:border-zinc-700 text-center font-semibold hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">Start Basic</a>
           </div>
@@ -361,17 +358,16 @@ export default function Home() {
               Best Value
             </div>
             <h3 className="text-xl font-semibold mb-2 text-blue-600 dark:text-blue-400">Growth</h3>
-            <p className="text-zinc-500 text-sm mb-6 h-10">
-  The complete package to launch and scale a real business. <br /> 
-  Landing pages with complex design and backend support.
-</p>
+            <p className="text-zinc-500 text-sm mb-6 min-h-[48px]">
+              The complete package to launch and scale a real business. Landing pages with complex design and backend support.
+            </p>
             <div className="text-4xl font-bold mb-8">₹2,999</div>
             <ul className="space-y-3 text-sm font-medium mb-8 flex-1">
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-blue-500 mt-0.5" /> Full web application build</li>
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-blue-500 mt-0.5" /> Secure Database & Auth</li>
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-blue-500 mt-0.5" /> Admin / User dashboards</li>
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-blue-500 mt-0.5" /> Priority delivery timeline</li>
-              <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-500 mt-0.5" /> 4 revision</li>
+              <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-blue-500 mt-0.5" /> 4 revisions</li>
             </ul>
             <a href="#contact" className="w-full py-3 rounded-xl bg-blue-600 text-white text-center font-semibold hover:bg-blue-700 transition-colors shadow-md">Launch Your SaaS</a>
           </div>
@@ -379,13 +375,13 @@ export default function Home() {
           {/* Advanced */}
           <div className="p-8 rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/30 flex flex-col hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors">
             <h3 className="text-xl font-semibold mb-2">Advanced</h3>
-            <p className="text-zinc-500 text-sm mb-6 h-10">Built to scale. For complex architectures and unique needs.</p>
+            <p className="text-zinc-500 text-sm mb-6 min-h-[48px]">Built to scale. For complex architectures and unique needs.</p>
             <div className="text-4xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-zinc-800 to-zinc-400 dark:from-white dark:to-zinc-500">Custom</div>
             <ul className="space-y-3 text-sm font-medium mb-8 flex-1">
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-400 mt-0.5" /> Advanced AI integrations</li>
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-400 mt-0.5" /> Complex 3rd-party APIs</li>
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-400 mt-0.5" /> Scalable cloud infrastructure</li>
-              <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-500 mt-0.5" /> 7 revision</li>
+              <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-500 mt-0.5" /> 7 revisions</li>
             </ul>
             <a href="#contact" className="w-full py-3 rounded-xl border border-zinc-300 dark:border-zinc-700 text-center font-semibold hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">Request a Quote</a>
           </div>
@@ -498,7 +494,7 @@ export default function Home() {
       <footer className="w-full text-center py-10 text-sm text-zinc-500 z-10 flex flex-col items-center gap-4 mt-4">
         <div className="w-8 h-8 bg-zinc-200 dark:bg-zinc-800 rounded-lg flex items-center justify-center font-bold text-zinc-400">S</div>
         <div className="flex items-center gap-4">
-          <p className="font-medium tracking-wide text-xs">© {new Date().getFullYear()} Shani.dev • Lucknow, India</p>
+          <p className="font-medium tracking-wide text-xs">© {new Date().getFullYear()} Shani.dev • Godhra, India</p>
           <span className="text-zinc-300 dark:text-zinc-700">|</span>
           <Link href="/personal" className="font-medium tracking-wide text-xs hover:text-blue-500 transition-colors">
             Read the raw story
