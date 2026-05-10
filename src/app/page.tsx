@@ -361,14 +361,17 @@ export default function Home() {
               Best Value
             </div>
             <h3 className="text-xl font-semibold mb-2 text-blue-600 dark:text-blue-400">Growth</h3>
-            <p className="text-zinc-500 text-sm mb-6 h-10">The complete package to launch and scale a real business. <br> landing pages with complex design and backend support </p>
+            <p className="text-zinc-500 text-sm mb-6 h-10">
+  The complete package to launch and scale a real business. <br /> 
+  Landing pages with complex design and backend support.
+</p>
             <div className="text-4xl font-bold mb-8">₹2,999</div>
             <ul className="space-y-3 text-sm font-medium mb-8 flex-1">
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-blue-500 mt-0.5" /> Full web application build</li>
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-blue-500 mt-0.5" /> Secure Database & Auth</li>
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-blue-500 mt-0.5" /> Admin / User dashboards</li>
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-blue-500 mt-0.5" /> Priority delivery timeline</li>
-              <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-400 mt-0.5" /> 4 revision</li>
+              <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-500 mt-0.5" /> 4 revision</li>
             </ul>
             <a href="#contact" className="w-full py-3 rounded-xl bg-blue-600 text-white text-center font-semibold hover:bg-blue-700 transition-colors shadow-md">Launch Your SaaS</a>
           </div>
@@ -382,7 +385,7 @@ export default function Home() {
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-400 mt-0.5" /> Advanced AI integrations</li>
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-400 mt-0.5" /> Complex 3rd-party APIs</li>
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-400 mt-0.5" /> Scalable cloud infrastructure</li>
-              <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-400 mt-0.5" /> 7 revision</li>
+              <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-500 mt-0.5" /> 7 revision</li>
             </ul>
             <a href="#contact" className="w-full py-3 rounded-xl border border-zinc-300 dark:border-zinc-700 text-center font-semibold hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-colors">Request a Quote</a>
           </div>
@@ -435,7 +438,7 @@ export default function Home() {
                 className="w-full flex items-center justify-between p-5 text-left font-semibold"
               >
                 {faq.q}
-                <ChevronDown className={`w-5 h-5 text-zinc-400 transition-transform ${openFaq === index ? "rotate-180" : ""}`} />
+                <ChevronDown className={`w-5 h-5 text-zinc-500 transition-transform ${openFaq === index ? "rotate-180" : ""}`} />
               </button>
               <AnimatePresence>
                 {openFaq === index && (
@@ -443,7 +446,7 @@ export default function Home() {
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
-                    className="px-5 pb-5 text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed"
+                    className="px-5 pb-5 text-zinc-600 dark:text-zinc-500 text-sm leading-relaxed"
                   >
                     {faq.a}
                   </motion.div>
@@ -460,7 +463,7 @@ export default function Home() {
         className="w-full max-w-4xl mx-auto bg-zinc-950 dark:bg-zinc-50 rounded-[2.5rem] p-10 md:p-16 text-center text-white dark:text-black mt-8 shadow-xl relative overflow-hidden z-10"
       >
         <h2 className="text-3xl md:text-5xl font-bold mb-4">Let's figure it out together.</h2>
-        <p className="text-zinc-400 dark:text-zinc-600 text-lg mb-10 max-w-xl mx-auto font-medium">
+        <p className="text-zinc-500 dark:text-zinc-600 text-lg mb-10 max-w-xl mx-auto font-medium">
           Got an idea but don't know where to start? Just drop a message. We'll have a casual chat about your project—no pressure, no sales tactics. Let's see if we're a good fit.
         </p>
         
