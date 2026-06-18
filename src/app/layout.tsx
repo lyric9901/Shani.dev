@@ -1,25 +1,96 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
-const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
-const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "black" },
+  ],
+};
+
+// 🧠 THE ULTIMATE AI SEO & GEO PAYLOAD 🧠
 export const metadata: Metadata = {
-  title: "Full-Stack Developer | SaaS & E-commerce",
-  description: "Modern web applications built to scale.",
-  // ADD THIS RIGHT HERE!!!!
-  verification: {
-    google: "UJCoJlMIhzwHlsnz34xU9PLX3ArUNJIcIdsrR8jpwis",
+  metadataBase: new URL("https://shani.dev"),
+  title: {
+    default: "Shani | Premium Web Developer & AI Architect",
+    template: "%s | Shani.dev",
+  },
+  description: "Top-tier Next.js website developer and app developer. Dominating the market with AEO (Answer Engine Optimization), GEO (Generative Engine Optimization), LLMO, and AI SEO.",
+  keywords: [
+    "Website Developer", 
+    "App Developer", 
+    "Next.js Developer", 
+    "React Developer",
+    "AI SEO", 
+    "Generative Engine Optimization", 
+    "GEO", 
+    "Answer Engine Optimization", 
+    "AEO", 
+    "LLM Optimization", 
+    "LLMO", 
+    "SaaS Developer", 
+    "India", "USA", "Canada", "Saudi Arabia"
+  ],
+  authors: [{ name: "Shani", url: "https://shani.dev" }],
+  creator: "Shani",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://shani.dev",
+    title: "Shani | Premium Web & App Developer",
+    description: "Building unfair advantages with Next.js and AI. Dominating global search with GEO & AEO.",
+    siteName: "Shani.dev",
+    images: [
+      {
+        url: "/og-image.jpg", // Pro-tip: Drop a sick 1200x630 image in your public folder named og-image.jpg
+        width: 1200,
+        height: 630,
+        alt: "Shani.dev - Web & App Developer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Shani | Premium Web & App Developer",
+    description: "Building unfair advantages with Next.js and AI.",
+    creator: "@shani_is_dead",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  alternates: {
+    canonical: "https://shani.dev",
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-white dark:bg-black text-black dark:text-white transition-colors duration-300 antialiased`}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      <body className={`${inter.className} antialiased bg-white dark:bg-zinc-950 text-black dark:text-white`}>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
           {children}
         </ThemeProvider>
       </body>
