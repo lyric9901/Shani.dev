@@ -130,7 +130,7 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
-            "name": "Shani Portfolio",
+            "name": "Build With Shani",
             "image": "https://shani.dev/og-image.jpg",
             "description": "Top-tier Next.js website developer and app developer offering advanced SEO, AEO (Answer Engine Optimization), GEO (Generative Engine Optimization), LLMO (LLM Optimization), and AI SEO services. Serving startups and enterprises globally in India, USA, Canada, and Saudi Arabia.",
             "areaServed": ["IN", "US", "CA", "SA"],

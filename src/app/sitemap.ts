@@ -2,7 +2,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://shani-dev.vercel.app';
+  const baseUrl = 'https://heyshanivercel.app';
   const targetCountries = ['in', 'us', 'ca', 'sa'];
 
   // Generate sitemap entries for localized routes automatically

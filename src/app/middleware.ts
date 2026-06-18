@@ -4,7 +4,7 @@ import type { NextRequest } from 'next/server';
 
 export function middleware(request: NextRequest) {
   // Vercel magically gives us the country code via request.geo
-  const country = request.geo?.country || 'US'; 
+  const country = (request.geo as any)?.country || 'US'; 
   const pathname = request.nextUrl.pathname;
 
   // Don't trap them in a redirect loop, and ignore images/static files

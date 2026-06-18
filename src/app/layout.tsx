@@ -16,7 +16,7 @@ export const viewport: Viewport = {
 
 // 🧠 THE ULTIMATE AI SEO & GEO PAYLOAD 🧠
 export const metadata: Metadata = {
-  metadataBase: new URL("https://shani.dev"),
+  metadataBase: new URL("https://heyshanivercel.app"),
   title: {
     default: "Shani | Premium Web Developer & AI Architect",
     template: "%s | Shani.dev",
@@ -37,12 +37,12 @@ export const metadata: Metadata = {
     "SaaS Developer", 
     "India", "USA", "Canada", "Saudi Arabia"
   ],
-  authors: [{ name: "Shani", url: "https://shani.dev" }],
+  authors: [{ name: "Shani", url: "https://heyshanivercel.app" }],
   creator: "Shani",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://shani.dev",
+    url: "https://heyshanivercel.app",
     title: "Shani | Premium Web & App Developer",
     description: "Building unfair advantages with Next.js and AI. Dominating global search with GEO & AEO.",
     siteName: "Shani.dev",
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://shani.dev",
+    canonical: "https://heyshanivercel.app",
   },
 };
 
