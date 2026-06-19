@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 export function middleware(request: NextRequest) {
-  // Pulling the country code directly from Vercel headers since request.geo is dead 🪦
+  // Grab the country code from Vercel's edge headers instead of geo
   const country = request.headers.get('x-vercel-ip-country') || 'US'; 
   const pathname = request.nextUrl.pathname;
 
