@@ -371,7 +371,7 @@ export default function Home() {
           <div className="p-6 md:p-8 rounded-3xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/30 flex flex-col hover:border-zinc-300 dark:hover:border-zinc-700 transition-colors">
             <h3 className="text-xl font-semibold mb-2">Basic</h3>
             <p className="text-zinc-500 text-sm mb-6 lg:min-h-[48px]">Test the waters. Perfect for validating a core idea quickly. Only frontend, no complex backend.</p>
-            <div className="text-4xl md:text-5xl font-bold mb-8">₹999<span className="text-xl text-zinc-400">+</span></div>
+            <div className="text-4xl md:text-5xl font-bold mb-8">₹999</div>
             <ul className="space-y-3 text-sm font-medium mb-8 flex-1">
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-400 mt-0.5 shrink-0" /> High-conversion landing page</li>
               <li className="flex items-start gap-2"><CheckCircle2 className="w-4 h-4 text-zinc-400 mt-0.5 shrink-0" /> Fully mobile responsive</li>

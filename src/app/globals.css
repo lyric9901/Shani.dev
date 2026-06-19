@@ -22,3 +22,16 @@ body {
   --background: #0a0a0a;
   --foreground: #ededed;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Add this to hide scrollbars on the mobile swipe sections */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

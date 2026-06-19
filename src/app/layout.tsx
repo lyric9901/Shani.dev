@@ -14,9 +14,9 @@ export const viewport: Viewport = {
   ],
 };
 
-// 🧠 THE ULTIMATE AI SEO & GEO PAYLOAD 🧠
+// 🧠 THE ULTIMATE AI SEO & GEO PAYLOAD + FAVICON 🧠
 export const metadata: Metadata = {
-  metadataBase: new URL("https://heyshanivercel.app"),
+  metadataBase: new URL("https://heyshani.vercel.app"),
   title: {
     default: "Shani | Premium Web Developer & AI Architect",
     template: "%s | Shani.dev",
@@ -37,18 +37,23 @@ export const metadata: Metadata = {
     "SaaS Developer", 
     "India", "USA", "Canada", "Saudi Arabia"
   ],
-  authors: [{ name: "Shani", url: "https://heyshanivercel.app" }],
+  authors: [{ name: "Shani", url: "https://heyshani.vercel.app" }],
   creator: "Shani",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://heyshanivercel.app",
+    url: "https://heyshani.vercel.app",
     title: "Shani | Premium Web & App Developer",
     description: "Building unfair advantages with Next.js and AI. Dominating global search with GEO & AEO.",
     siteName: "Shani.dev",
     images: [
       {
-        url: "/og-image.jpg", // Pro-tip: Drop a sick 1200x630 image in your public folder named og-image.jpg
+        url: "/og-image.jpg", 
         width: 1200,
         height: 630,
         alt: "Shani.dev - Web & App Developer",
@@ -73,7 +78,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://heyshanivercel.app",
+    canonical: "https://heyshani.vercel.app",
   },
 };
 
